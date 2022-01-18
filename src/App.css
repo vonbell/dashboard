@@ -1,38 +1,38 @@
 .App {
-  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 0px;
+  gap: 2rem;
+  margin: 2rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App * {
+  padding: 0.3rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Dashboard { 
+  grid-area: 1 / 1 / 3 / 2;
+  background-color: rgb(182, 180, 180);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.WebsiteVisitors {
+  grid-area: 2 / 2 / 3 / 5;
+  background-color: rgb(182, 180, 180);
 }
 
-.App-link {
-  color: #61dafb;
+.Reviews {
+  grid-area: 1 / 2 / 2 / 3;
+  background-color: rgb(182, 180, 180);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.AverageRating {
+  grid-area: 1 / 3 / 2 / 4;
+  background-color: rgb(182, 180, 180);
+}
+
+.SentimentAnalysis {
+  grid-area: 1 / 4 / 2 / 5;
+  background-color: rgb(182, 180, 180);
 }
